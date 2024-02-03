@@ -1,0 +1,66 @@
+/* 
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+:root{
+    --primary-color: #0b0c10;
+    --primary-color-light: #1f2833;
+    --secondary-color: #66fcf1;
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.box{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: var(--primary-color);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0,0.16);
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+}
+
+input{
+    grid-column: span 4;
+    height: 70px;
+    width: 250px;
+    background-color: var(--primary-color-light);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0,0.16);
+    border: none;
+    border: 30px;
+    color: var(--secondary-color);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button{
+    height:40px;
+    width: 50px;
+    background-color: var(--primary-color-light);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 40%;
+    margin: 8px;
+    font-size: 16px;
+}
